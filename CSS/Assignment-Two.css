@@ -237,3 +237,32 @@ Main Body Part 1
     display: grid;
     grid-template-columns: repeat(5,1fr);
 }
+.sponsor-div img{
+    filter: grayscale(100%);
+}
+.footer{
+    background-color: antiquewhite;
+    /* border: 2px blue; */
+    height: 40px;
+    width: 770px;
+    text-align: center;
+    margin-left: 370px;
+    padding-top: 30px;
+    margin-bottom: 200px;
+    border-radius: 5px;
+}
+
+
+/* -----------------------------------
+Responsive Part
+---------------------------------------*/
+@media screen and (max-width:577px) {
+    .section-two, .sponsor-div, .section-three-div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sponsor-div img{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
